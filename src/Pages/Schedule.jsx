@@ -25,7 +25,7 @@ const Schedule = () => {
         ["Arivay", "Cikal", "kevin A", "kevin P", "Takim", "Ikshan"],
         ["Aziz", "Aspi", "Ilham", "Rafif", "Renaldi", "Irvan", "Ray"],
         ["Cecep", "Akmal", "Ben", "Daffa", "Ivander", "Atha", "Theo"],
-        ["Aho", "Langgeng", "Lingga", "Togi", "Alvino", "Rully", "Harris"],
+        ["Aho", "Langgeng", "Lingga", "Alvino", "Rully", "Harits"],
         ["Qonita", "Syifa", "Aisya", "Ziniva", "Dinda", "Reyhanur"],
     ]
 
