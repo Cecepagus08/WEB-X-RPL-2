@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 
 const Senin = React.lazy(() => import("../components/Mapel/Senin"));
 const Selasa = React.lazy(() => import("../components/Mapel/Selasa"));
@@ -10,7 +13,7 @@ const Jumat = React.lazy(() => import("../components/Mapel/Jumat"));
 
 
 const Schedule = () => {
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const daysOfWeek = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
     const [dayIndex, setDayIndex] = useState(new Date().getDay());
 
     useEffect(() => {
@@ -44,9 +47,28 @@ const Schedule = () => {
             {/* Jadwal Mapel */}
             <div className="lg:flex lg:justify-center lg:gap-32 lg:mb-10 lg:mt-16 ">
                 <div className="text-white flex flex-col justify-center items-center mt-8 md:mt-3 overflow-y-hidden">
-                    <div className="text-2xl font-medium mb-5" data-aos="fade-up" data-aos-duration="500">
+                <div className="flex preview px-8 py-5 mb-5 justify-between  items-center" data-aos="fade-up" data-aos-duration="500">
+                      <button
+                            id="btnPreview"
+                            onClick={handlePreviousDay}
+                            className=" text-white px-4 py-2 rounded-md "
+                        >
+                            <FontAwesomeIcon icon={faAnglesLeft} />
+                        </button>
+                
+                    <div className="text-2xl font-medium " >
                         {daysOfWeek[dayIndex]}
                     </div>
+                       <button
+                            id="btnPreview"
+                            onClick={handleNextDay}
+                            className="text-white px-4 py-2 rounded-md "
+                        >
+                            <FontAwesomeIcon icon={faAnglesRight} />
+                            
+                        </button></div>
+
+                    
                     <div data-aos="fade-up" data-aos-duration="400">
                         {TodayComponent ? (
                             <React.Suspense fallback={<p>Loading...</p>}>
@@ -87,20 +109,7 @@ const Schedule = () => {
                 )}
                 
                 
-                    <div className="flex mt-4">
-                        <button
-                            onClick={handlePreviousDay}
-                            className="bg-blue-500 text-white px-4 py-2 rounded-md mr-2"
-                        >
-                            Previous
-                        </button>
-                        <button
-                            onClick={handleNextDay}
-                            className="bg-blue-500 text-white px-4 py-2 rounded-md"
-                        >
-                            Next
-                        </button>
-                    </div>
+
             </div>
         </>
     );
