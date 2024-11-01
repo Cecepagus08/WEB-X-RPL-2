@@ -15,10 +15,16 @@ const StrukturKelas = () => {
 	}, [aosLoaded])
 
 	return (
-		<div className="z-1 relative h-auto lg:overflow-hidden">
+		<div className="z-1 pt-10 relative h-auto lg:overflow-hidden">
 			{/* wali kelas */}
-			<div data-aos="fade-up" data-aos-duration="500" className="mt-14 md:mt-10">
-				<BorderStruktur Jabatan="Wali Kelas" Nama="Ibu Yenny" Width="150px" />
+			<div data-aos="fade-up" data-aos-duration="500" className=" md:mt-10">
+				<BorderStruktur Jabatan="Kepala Sekolah" Nama="Hj. Sri sundari, S.pd, M.pd" Width="200px" />
+			</div>
+			<div className="flex flex-col justify-center items-center">
+				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" />
+			</div>
+			<div data-aos="fade-up" data-aos-duration="500" className=" md:mt-10">
+				<BorderStruktur Jabatan="Wali Kelas" Nama="Yenny Astion Rompas" Width="150px" />
 			</div>
 			<div className="flex flex-col justify-center items-center">
 				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" />
@@ -130,22 +136,27 @@ const StrukturKelas = () => {
 					<div className="flex-col">
 						<BorderStruktur Jabatan="Sekertaris" Nama="Dinda" Width="120px" />
 						<div className="py-[3%]"></div>
+						<BorderStruktur Jabatan="W. Sekertaris" Nama="Ikhsan" Width="120px" />
 				
 					</div>
 
 					<div className="flex-col">
 						<BorderStruktur Jabatan="Bendahara" Nama="Akmal" Width="120px" />
 						<div className="py-[3%]"></div>
+						<BorderStruktur Jabatan="W. Bendahara" Nama="Aisya" Width="120px" />
 
 					</div>
 				</div>
 
-				<div className="relative top-[-15rem]" data-aos="fade-up" data-aos-duration="900">
+				<div className="relative top-[-16.3rem]" data-aos="fade-up" data-aos-duration="900">
 					<img src="LineVertikal3.svg" alt="" />
+				  <img className="relative top-[-0.9rem]" src="Circle.svg" alt="" />
+
 				</div>
 
+
 				{/* Keamanan dan Kebersihan */}
-				<div className="lg:flex">
+				<div className="lg:flex relative">
 					<img
 						src="LineHorizontal.svg"
 						alt=""
