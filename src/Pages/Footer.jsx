@@ -1,4 +1,4 @@
-import Rating from "../components/Rating"
+
 
 const Footer = () => {
 	return (
@@ -36,9 +36,7 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className="hidden md:block">
-							<Rating />
-						</div>
+
 					</div>
 
 

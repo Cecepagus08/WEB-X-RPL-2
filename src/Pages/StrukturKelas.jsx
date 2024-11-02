@@ -20,8 +20,10 @@ const StrukturKelas = () => {
 			<div data-aos="fade-up" data-aos-duration="500" className=" md:mt-10">
 				<BorderStruktur Jabatan="Kepala Sekolah" Nama="Hj. Sri sundari, S.pd, M.pd" Width="200px" />
 			</div>
-			<div className="flex flex-col justify-center items-center">
-				<img src="LineVertikal.svg" alt="" data-aos="fade-up" data-aos-duration="550" />
+			<div data-aos="fade-up" data-aos-duration="550"  className="flex flex-col justify-center items-center">
+				<img src="LineVertikal.svg" alt="" />
+					<img src="Circle.svg" className="relative top-[-0.6rem]" alt="" />
+				
 			</div>
 			<div data-aos="fade-up" data-aos-duration="500" className=" md:mt-10">
 				<BorderStruktur Jabatan="Wali Kelas" Nama="Yenny Astion Rompas" Width="150px" />

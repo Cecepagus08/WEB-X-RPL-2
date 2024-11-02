@@ -27,18 +27,17 @@ const Home = () => {
 						5
 					</div>
 				</div>
-
 				<div className="grid grid-cols-2 md:grid-cols-2 gap-7 md:gap-5">
-					<div className="grid gap-2 md:gap-0 md:grid-cols-1">
-						<BoxClassIg />
-					</div>
 					<div className="grid gap-2 md:gap-0 md:grid-cols-1">
 						<BoxOldWeb />
 						<BoxTextAnonim />
 					</div>
+					<div className="grid gap-2 md:gap-0 md:grid-cols-1">
+						<BoxClassIg />
+					</div>
 				</div>
 			</div>
-
+			
 			{/* Dekstop */}
 			<div className="hidden lg:block">
 				<div className="flex justify-center items-center flex-col h-[100vh]">
